@@ -1,0 +1,19 @@
+{
+  "name": "DSRM",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "동사로마 사이트를 좀 더 편하게",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+S",
+        "mac": "Command+S"
+      }
+    }
+  }
+}
