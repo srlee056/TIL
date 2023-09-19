@@ -1,19 +1,29 @@
 {
   "name": "DSRM",
-  "action": {},
+  "action": {
+    "default_popup": "popup.html"
+  },
   "manifest_version": 3,
   "version": "0.1",
   "description": "동사로마 사이트를 좀 더 편하게",
-  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "https://dongsaroma.com/baseball/*"
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
   "background": {
     "service_worker": "service-worker.js"
   },
   "commands": {
-    "_execute_action": {
+    "click_submit_button": {
       "suggested_key": {
-        "default": "Ctrl+S",
-        "mac": "Command+S"
-      }
+        "default": "Shift+Ctrl+S",
+        "mac": "Shift+Ctrl+S"
+      },
+      "description": "동사로마 사이트를 좀 더 편하게"
     }
   }
 }
