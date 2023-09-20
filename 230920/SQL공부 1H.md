@@ -32,6 +32,8 @@ LIMIT 숫자
             ORDER BY TOTAL_ORDER desc;
         ```
         
+        WHERE ~ AND 
+        
     3. 특정 문자열 포함 조건식
         
         ```sql
@@ -40,6 +42,8 @@ LIMIT 숫자
         --  WHERE ADDRESS LIKE '%강원도%' 
             ORDER BY FACTORY_ID asc;
         ```
+        
+        WHERE ~ LIKE CONCAT (’%’, ‘문자열, ‘%’), = 가 아니라 LIKE 사용,  와일드카드 역할의 ‘%’ 사용, ||가 아니라 CONCAT 사용, 
         
     4. group by
         
@@ -51,6 +55,10 @@ LIMIT 숫자
             GROUP BY R.REST_ID
             ORDER BY SCORE desc, I.FAVORITES desc;
         ```
+        
+        ROUND (A, n) - n자리까지 반올림해서 표시
+        AVG(X) as average 
+        GROUP by Y - Y 그룹으로 묶고 X 컬럼에 대한 평균을 average라는 이름의 컬럼으로 나타냄
         
          
         
@@ -64,3 +72,6 @@ LIMIT 숫자
                 AND B.CREATED_DATE BETWEEN '2022-10-01' AND '2022-10-31'
             ORDER BY R.CREATED_DATE asc, B.TITLE asc;
         ```
+        
+        date_format(R.CREATED_DATE, '%Y-%m-%d') 
+        B.CREATED_DATE **BETWEEN** '2022-10-01' AND '2022-10-31'
