@@ -1,3 +1,5 @@
+
+
 function clickSubmitButton() {
   document.querySelector("#btn_submit").click();
   //console.log("clicked");
@@ -36,5 +38,33 @@ chrome.commands.onCommand.addListener(function (command) {
       console.log(`Command ${command} not found`);
   }
 });
+
+function filteredWords() {
+  var nodes = document.querySelector("#fboardlist > div.gw_tb01 > ul").children;
+  var list = []
+
+  for (let i = 2; i < nodes.length; i++) {
+    let title_text = nodes[i].querySelector('.bo_tit>a').innerText;
+    ///console.log(title_text);
+    for (let j = 0; j < list.length; j++) {
+      ///console.log(title_text.indexOf(list[j]));
+      if (title_text.indexOf(list[j]) >= 0) {
+        nodes[i].style.display = 'none';
+      }
+    }
+  }
+}
+
+chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
+  if (changeInfo.status == 'loading' || 'completed') {
+    console.log("tab updated");
+    chrome.scripting.executeScript({
+      target: { tabId: tabId },
+      function: filteredWords,
+    });
+
+
+  }
+})
 
 
