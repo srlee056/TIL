@@ -1,0 +1,153 @@
+{
+  "main": {
+    "id": "83774d3f07e82223",
+    "type": "split",
+    "children": [
+      {
+        "id": "79e3cefb46ceb314",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d372bfd61ef11f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "230924 TIL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9285cedde6ec0d43",
+    "type": "split",
+    "children": [
+      {
+        "id": "727f6a584d1916b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f5f269b0f8e95271",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8bf25cd56f96ea80",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "daa87e253879ae85",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "67ebf83a13ae2874",
+    "type": "split",
+    "children": [
+      {
+        "id": "0e8c05885539b7ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9002e3e800b860b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "230924 TIL.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "45b3ac3b7c8a9f0f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "230924 TIL.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cd8fc9587bc3093e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "af47bda9ce135eeb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "230924 TIL.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "3d372bfd61ef11f3",
+  "lastOpenFiles": [
+    "230924 TIL.md"
+  ]
+}
