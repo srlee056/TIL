@@ -56,14 +56,15 @@ function filteredWords() {
 }
 
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
-  if (changeInfo.status == 'loading' || 'completed') {
-    console.log("tab updated");
-    chrome.scripting.executeScript({
-      target: { tabId: tabId },
-      function: filteredWords,
-    });
 
-
+  if (changeInfo.status == 'completed') {
+    if (!tab.url.includes("chrome://") && tab.url.includes(dsrm)) {
+      console.log("tab updated");
+      chrome.scripting.executeScript({
+        target: { tabId: tabId },
+        function: filteredWords,
+      });
+    }
   }
 })
 
