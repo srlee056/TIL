@@ -301,6 +301,9 @@
     [정리에 참고한 사이트](https://as-i-am-programing.tistory.com/7)
     
 - 추상적 자료구조
+    - abstract data type vs. data structure
+        - an ADT (Abstract Data Type) is more of a logical description, while a Data Structure is concrete.
+    - [정리에 참고한 사이트 : 추상적 자료형 vs. 자료구조](https://velog.io/@hwan2da/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%B6%94%EC%83%81%EC%9E%90%EB%A3%8C%ED%98%95)
 - dummy node를 추가한 구조의 linked list
 - stack underflow
 
